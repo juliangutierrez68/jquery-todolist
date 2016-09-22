@@ -8,3 +8,22 @@ body{
 	background-position:center center;
 	background-size:cover;
 }
+#form{
+	display:block;
+	width:500px;
+	height:auto;
+	margin:0 auto;
+	background-color:rgba(0,0,0,0.7);
+	padding:10px;
+}
+#form input{
+	width:75%;
+}
+#form button{
+	width:20%;
+}
+h1{
+	font-size:2em;
+	color:#ffffff;
+	text-align:center;
+}
