@@ -10,11 +10,13 @@ body{
 }
 #form{
 	display:block;
-	width:500px;
+	max-width:500px;
+	width:100%;
 	height:auto;
 	margin:0 auto;
 	background-color:rgba(0,0,0,0.7);
 	padding:10px;
+	box-shadow:5px 5px 8px #020202;
 }
 #form input{
 	width:75%;
