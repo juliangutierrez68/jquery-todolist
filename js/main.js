@@ -10,6 +10,15 @@ $(document).ready(function(){
 		clearInput();
 	});
 
+	//Hover over task to show delete button
+
+	$(document).on('mouseenter','.task-item',function(){
+		$(this).children().show();
+	});
+	$(document).on('mouseleave','.task-item',function(){
+		$(this).children().hide();
+	});
+
 	//Function to retrieve input's value
 	function retrieveContent(){
 		var $value = $('input[name=task]').val();
@@ -18,7 +27,7 @@ $(document).ready(function(){
 
 	//Function write to list
 	function toList(task){
-		$list.append("<p>" + task + "</p>");
+		$list.append('<p class="task-item"> <a class="delete-button"><span>X </span></a>' + task + "</p>");
 	}
 
 	//Function clear input field
