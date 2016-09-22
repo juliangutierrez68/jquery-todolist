@@ -19,6 +19,11 @@ $(document).ready(function(){
 		$(this).children().hide();
 	});
 
+	//Delete action
+		$(document).on('click','.delete-button', function(){
+				$(this).parent().remove();
+		});
+
 	//Function to retrieve input's value
 	function retrieveContent(){
 		var $value = $('input[name=task]').val();
